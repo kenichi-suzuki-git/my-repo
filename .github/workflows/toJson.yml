@@ -1,0 +1,9 @@
+name: toJSON functions
+on: push
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "${CONTEXT}"
+        env:
+            CONTEXT: ${{ toJSON(github) }}
