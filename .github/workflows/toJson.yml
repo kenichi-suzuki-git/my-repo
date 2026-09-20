@@ -1,7 +1,7 @@
 name: toJSON functions
 on: push
 jobs:
-  hello:
+  dump:
     runs-on: ubuntu-latest
     steps:
       - run: echo "${CONTEXT}"
